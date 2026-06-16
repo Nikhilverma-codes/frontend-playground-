@@ -11,12 +11,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const errorMessage = document.getElementById("error-message");
 
     /* The API Key*/
-    // const API_KEY = "YOUR_OPENWEATHERMAP_API_KEY_HERE";
-    const API_KEY = "2979e413c63c067c1d47bd15ae2bd819";
+    const API_KEY = "YOUR_OPENWEATHERMAP_API_KEY_HERE";
 
-    
-    
-    
     /*Setting up the Button Click*/
     getWeatherBtn.addEventListener('click', async () => {
         const city = cityInput.value.trim();
