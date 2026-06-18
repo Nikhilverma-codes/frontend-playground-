@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(31, 32, 61);
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container {
+  background-color: rgb(4, 5, 24);
+  padding: 20px;
+  width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgb(0, 0, 0, 0.6);
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="number"] {
+  background: rgb(47, 47, 48);
+  color: aliceblue;
+  border: none;
+  outline: none;
+  width: 45%;
+  margin: 3px;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+button {
+  padding: 10px;
+  background: #6200ea;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  color: aliceblue;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #1406b8;
+}
+
+#expense-list {
+  padding: 0;
+  list-style-type: none;
+}
+
+#expense-list li {
+  background-color: #fff;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+}
+
+#total {
+  text-align: right;
+}
+
+.hidden {
+  display: none;
+}
