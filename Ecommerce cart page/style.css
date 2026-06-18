@@ -31,7 +31,8 @@ h2 {
   margin-bottom: 30px;
 }
 
-.product {
+/* This matches the rows created dynamically in JS */
+.product-row {
   background-color: rgb(46, 37, 37);
   padding: 10px;
   margin-bottom: 10px;
@@ -40,8 +41,9 @@ h2 {
   align-items: center;
   border-radius: 5px;
 }
-.product button {
-  background-color: #3503eb;
+
+/* Button Base Styles */
+button {
   border: none;
   padding: 5px 10px;
   color: aliceblue;
@@ -50,26 +52,36 @@ h2 {
   transition: background-color 0.3s;
 }
 
-.product button:hover {
+.btn-primary {
+  background-color: #3503eb;
+}
+
+.btn-primary:hover {
   background-color: #2903b0;
+}
+
+.btn-danger {
+  background-color: #d9534f;
+}
+
+.btn-danger:hover {
+  background-color: #c9302c;
 }
 
 #cart-items {
   margin-bottom: 20px;
   box-shadow: 0 2px 6px black;
 }
+
 #cart-total {
   text-align: right;
-  margin: 10px;
+  margin-top: 15px;
 }
 
 #checkout-btn {
   background-color: #3503eb;
-  border: none;
   padding: 10px;
-  color: aliceblue;
-  border-radius: 5px;
-  transition: background-color 0.3s;
+  margin: 5px;
 }
 
 #checkout-btn:hover {
